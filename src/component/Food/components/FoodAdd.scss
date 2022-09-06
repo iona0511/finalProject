@@ -1,0 +1,22 @@
+.foodAdd {
+    width: 42px;
+    height: 32px;
+    background-color: #b79973;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.foodAdd:hover {
+    background-color: #b3803e;
+}
+
+@media (max-width: 375px) {
+    .foodAdd {
+        margin: 0 0;
+    }
+}
