@@ -1,4 +1,4 @@
-/* eslint-disable prettier/prettier */
+
 import "./MemberMenu.css";
 import { NavLink,Link } from "react-router-dom";
 

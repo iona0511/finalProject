@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable react-hooks/exhaustive-deps */
 import "./CourseComtentObject.css";
 import { useRef, useEffect } from "react";

@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import "./Banner.css";
 
 

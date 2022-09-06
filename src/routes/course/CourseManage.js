@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
-/* eslint-disable prettier/prettier */
 import { Fragment, useState, useEffect } from "react";
 import NavBar from "../../component/NavBar/NavBar";
 import ManageHeader from "../../component/Course/CourseManage/ManageHeader/ManageHeader";

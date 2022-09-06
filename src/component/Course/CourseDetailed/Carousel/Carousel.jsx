@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable prettier/prettier */
 import "./Carousel.css";
 import { useState, useEffect, useRef } from "react";
 import useSetNow from "../../../../hooks/useSetNow";

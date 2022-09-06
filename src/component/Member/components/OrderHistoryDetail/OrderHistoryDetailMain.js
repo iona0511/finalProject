@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { Fragment, useState, useEffect, useContext } from "react";
 import "./OrderHistoryDetailMain.css";
 import MemberMenu from "../MemberMenu/MemberMenu";

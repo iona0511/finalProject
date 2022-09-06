@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable prettier/prettier */
 import "./CourseContentItem.css";
 import { useState, useRef, useEffect } from "react";
 

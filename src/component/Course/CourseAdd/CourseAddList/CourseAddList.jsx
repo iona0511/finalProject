@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable prettier/prettier */
 /* eslint-disable no-unused-vars */
 import "./CourseAddList.css";
 import { useRef, useEffect } from "react";

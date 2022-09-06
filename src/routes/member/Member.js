@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { Fragment, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import ChatBot from "../../component/Bot/ChatBot";

@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { useState,useContext } from "react";
 import "./HistoryPosts.css";
 

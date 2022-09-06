@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { useState } from "react";
 import "./Calendar.css";
 import { chunk } from '../../../../helper/chunk';

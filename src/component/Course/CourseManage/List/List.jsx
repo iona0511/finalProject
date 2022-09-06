@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable prettier/prettier */
 import "./List.css";
 import { imgSrc, courseDelete } from "../../../../config/api-path";
 import axios from "axios";

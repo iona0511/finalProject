@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 // 排序用function
 export const sortDataFun = (
     sortStr, // 傳進來判斷用的排序選單value - 字串

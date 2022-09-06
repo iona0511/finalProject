@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable prettier/prettier */
 import { useState } from "react";
 import { useRef, useEffect } from "react";
 function CourseContentNotice({ notice, setNotice, topZeroSure, start }) {

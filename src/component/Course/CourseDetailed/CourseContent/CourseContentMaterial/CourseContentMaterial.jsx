@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable prettier/prettier */
 import { useRef, useEffect } from "react";
 import { useState } from "react";
 function CourseContentMaterial({ materia, setMaterial, topZeroSure, start, courseDetailedData }) {

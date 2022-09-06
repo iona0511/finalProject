@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable prettier/prettier */
 import { Fragment, useEffect, useState, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import NavBar from "../../component/NavBar/NavBar";
