@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import "./PicRender.scss";
 import Magnifier from "react-magnifier";
+import { SERVER } from "../../../config/api-path";
 
 function PicRender(props) {
     const { renderData, dataLoaded, tagData } = props;
@@ -10,7 +11,7 @@ function PicRender(props) {
     // );
     useEffect(() => {
         if (dataLoaded) {
-            let imgLink = `http://localhost:3500/images/products/${renderData[0].products_with_products_categories_sid}/${renderData[0].products_pic}`;
+            let imgLink = `${SERVER}/images/products/${renderData[0].products_with_products_categories_sid}/${renderData[0].products_pic}`;
             setimgSelect(imgLink);
         }
     }, [dataLoaded]);
@@ -52,7 +53,7 @@ function PicRender(props) {
                                       }}
                                       src={
                                           dataLoaded
-                                              ? `http://localhost:3500/images/products/${
+                                              ? `${SERVER}/images/products/${
                                                     renderData[0]
                                                         .products_with_products_categories_sid
                                                 }/${

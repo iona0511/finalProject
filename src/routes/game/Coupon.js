@@ -3,7 +3,7 @@ import { useAuth } from "../../component/Member/AuthContextProvider";
 import NavBar from "../../component/NavBar/NavBar";
 // import "./css/Coupon.css";
 import "./css/Coupon.scss";
-
+import { SERVER } from "../../config/api-path";
 import axios from "axios";
 import { Link, useLocation, useSearchParams,useNavigate } from "react-router-dom";
 import moment from "moment";
@@ -23,7 +23,7 @@ function Coupon() {
 
     const Coupon_foruser = async () => {
         await axios
-            .get("http://localhost:3500/Coupon_foruser/API", {
+            .get(`${SERVER}/Coupon_foruser/API`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },

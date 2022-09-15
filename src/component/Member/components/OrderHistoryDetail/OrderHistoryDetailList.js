@@ -1,4 +1,5 @@
 import { FaPen } from "react-icons/fa";
+import { SERVER } from "../../../../config/api-path";
 
 function OrderHistoryDetailList({ list, orderList }) {
     const {
@@ -42,7 +43,7 @@ function OrderHistoryDetailList({ list, orderList }) {
                             <div
                                 className="odd-pic"
                                 style={{
-                                    backgroundImage: `url(http://localhost:3500/images/products/${products_with_products_categories_sid}/${pic})`,
+                                    backgroundImage: `url(${SERVER}/images/products/${products_with_products_categories_sid}/${pic})`,
                                     backgroundRepeat: "no-repeat",
                                     backgroundPosition: "center",
                                     backgroundSize: "cover",
@@ -52,7 +53,7 @@ function OrderHistoryDetailList({ list, orderList }) {
                             <div
                                 className="odd-pic"
                                 style={{
-                                    backgroundImage: `url(http://localhost:3500/images/food/${pic})`,
+                                    backgroundImage: `url(${SERVER}/images/food/${pic})`,
                                     backgroundRepeat: "no-repeat",
                                     backgroundPosition: "center",
                                     backgroundSize: "cover",

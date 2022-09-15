@@ -6,7 +6,7 @@ import UserList from "./UserList";
 import { getUserData,editUserData,editPasswordAPI,uploadAvatar } from "../../../../config/api-path";
 import ChatBot from "../../../Bot/ChatBot";
 import Footer from "../../../Footer"
-
+import { SERVER } from "../../../../config/api-path";
 import Modal from "../../../Modal/Modal";
 
 import axios from "axios";
@@ -324,7 +324,7 @@ function UserInfo() {
                     <MemberMenu />
                     <div className="ui-wrap-right">
                         <div className="ui-title">編輯會員資料</div>
-                        <div className="avatar" onClick={uploadFile} onChange={changeAvatar} style={{ backgroundImage: `url(http://localhost:3500/avatar/${avatarField})`,backgroundRepeat: 'no-repeat',backgroundPosition: 'center',backgroundSize: 'cover',}}>
+                        <div className="avatar" onClick={uploadFile} onChange={changeAvatar} style={{ backgroundImage: `url(${SERVER}/avatar/${avatarField})`,backgroundRepeat: 'no-repeat',backgroundPosition: 'center',backgroundSize: 'cover',}}>
                             <input type="file" name="avatar" style={{ display: "none" }} ref={avatarFile}/>
                         </div>
                         <div className="ui-info-wrap">

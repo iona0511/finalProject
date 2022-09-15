@@ -1,5 +1,6 @@
 import { React } from "react";
 import "./StarCard.css";
+import { SERVER } from "../../../config/api-path";
 
 function Card({ cardData }) {
     const {
@@ -16,7 +17,7 @@ function Card({ cardData }) {
             <div
                 className="star_card_top"
                 style={{
-                    background: `url(http://localhost:3500/images/frontpage/${star_img_file}/${star_img_s}) no-repeat center center`,
+                    background: `url(${SERVER}/images/frontpage/${star_img_file}/${star_img_s}) no-repeat center center`,
                     backgroundSize: "cover",
                 }}
             >

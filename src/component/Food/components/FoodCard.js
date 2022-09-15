@@ -1,6 +1,8 @@
 import "./FoodCard.scss";
 import "./FoodAdd.scss";
 import ScrollWrap from "../../Item/ScrollWrap/ScrollWrap";
+import { imgSrc } from "../../../config/api-path";
+
 function FoodCard({ setShowFoodDetail, setIsShow, allfood, handleCakeCount }) {
     const {
         menu_name,
@@ -15,14 +17,14 @@ function FoodCard({ setShowFoodDetail, setIsShow, allfood, handleCakeCount }) {
             start="coffee-cardaniwrapbf"
             end="coffee-cardaniwrapat"
             offset={150}
-            //   backAgain={true}
-            //   backOffset={-5}
+        //   backAgain={true}
+        //   backOffset={-5}
         >
             <div className="foodCard" key={menu_sid}>
                 <div className="foodCardTop">
                     <img
                         className="photo"
-                        src={`http://localhost:3500/images/food/${menu_photo}`}
+                        src={`${imgSrc}/food/${menu_photo}`}
                         alt="logo"
                     />
                     <div className="foodCardLevel">{menu_categories}</div>

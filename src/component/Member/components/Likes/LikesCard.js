@@ -8,6 +8,7 @@ import AuthContext from "../../AuthContext";
 import axios from "axios";
 import { delUserLikes,getUserLikes } from "../../../../config/api-path";
 import { useNavigate } from "react-router-dom";
+import { SERVER } from "../../../../config/api-path";
 
 
 function LikesCard({myLikes,setMyLikes,setIsOpen}) {
@@ -66,7 +67,7 @@ function LikesCard({myLikes,setMyLikes,setIsOpen}) {
             <div className="like-info">
                 <div className="like-info-wrap">
                     <div className="like-content" onClick={() =>gotoProduct(products_sid)}>
-                        <div className="like-pic" style={{ backgroundImage: `url(http://localhost:3500/images/products/${products_with_products_categories_sid}/${products_pic})`,backgroundRepeat: 'no-repeat',backgroundPosition: 'center',backgroundSize: 'cover',}}>
+                        <div className="like-pic" style={{ backgroundImage: `url(${SERVER}/images/products/${products_with_products_categories_sid}/${products_pic})`,backgroundRepeat: 'no-repeat',backgroundPosition: 'center',backgroundSize: 'cover',}}>
                         </div>
                         <div className="like-name">{products_name}</div>
                         <div className="like-price">

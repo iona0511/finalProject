@@ -11,6 +11,7 @@ import { useAuth } from "../../component/Member/AuthContextProvider";
 import { useNavigate } from "react-router-dom";
 import ChatBot from "../../component/Bot/ChatBot";
 import PacmanLoader from "react-spinners/PacmanLoader";
+import { SERVER } from "../../config/api-path";
 
 function Getcoupon() {
     const [isOpen1, setIsOpen1] = useState(true);
@@ -67,7 +68,7 @@ function Getcoupon() {
 
     const [init, setInit] = useState(false);
     if (!init) {
-        fetch("http://localhost:3500/SendCoupon/api", {
+        fetch(`${SERVER}/SendCoupon/api`, {
             method: "GET",
             body: JSON.stringify(),
             headers: {
@@ -114,7 +115,7 @@ function Getcoupon() {
     const [isOpen, setIsOpen] = useState(false);
 
     const SendCoupon = (event) => {
-        fetch("http://localhost:3500/SendCoupon/api-lottery-result", {
+        fetch(`${SERVER}/SendCoupon/api-lottery-result`, {
             method: "GET",
             body: JSON.stringify(),
             headers: {

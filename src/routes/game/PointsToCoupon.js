@@ -5,7 +5,7 @@ import axios from "axios";
 import NavBar from "../../component/NavBar/NavBar";
 // import "./css/PointsToCoupon.css";
 import "./css/PointsToCoupon.scss";
-
+import { SERVER } from "../../config/api-path";
 import {
     ScrollMotionContainer,
     ScrollMotionItem,
@@ -21,7 +21,7 @@ function PointsToCoupon() {
     let theAmount = count + vouchers + 1;
     const currentPoints = async () => {
         await axios
-            .get("http://localhost:3500/PointsToCoupon/API", {
+            .get(`${SERVER}/PointsToCoupon/API`, {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${token}`,
@@ -46,7 +46,7 @@ function PointsToCoupon() {
         };
         axios
             .post(
-                "http://localhost:3500/PointsToCoupon/Api-Points-To-Coupon-result",
+                `${SERVER}/PointsToCoupon/Api-Points-To-Coupon-result`,
                 {
                     theLeftPoints: theLeftPoints,
                     theAmount: theAmount,

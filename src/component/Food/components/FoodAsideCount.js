@@ -1,6 +1,7 @@
 import React from "react";
 import { iceChoice, sugarChoice } from "../../../config/constant";
 import { FaTrashAlt } from "react-icons/fa";
+import { SERVER } from "../../../config/api-path";
 
 function FoodAsideCount({ item, setDataFromCount, removeItem }) {
     const {
@@ -27,7 +28,7 @@ function FoodAsideCount({ item, setDataFromCount, removeItem }) {
         <>
             <div key={menu_sid} className="detail">
                 <img
-                    src={`http://localhost:3500/images/food/${menu_photo}`}
+                    src={`${SERVER}/images/food/${menu_photo}`}
                     alt=""
                 />
                 <div className="center">

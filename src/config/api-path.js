@@ -1,4 +1,5 @@
-export const SERVER = "http://localhost:3500";
+export const SERVER = "https://finalproject-node-heroku.herokuapp.com";
+// export const SERVER = "http://localhost:3500";
 export const imgSrc = `${SERVER}/images`;
 export const avatarDIR = `${SERVER}/avatar`;
 // NAV

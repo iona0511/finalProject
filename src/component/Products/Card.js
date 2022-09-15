@@ -1,5 +1,6 @@
 import { React } from "react";
 import "./Card.scss";
+import { SERVER } from "../../config/api-path";
 
 function Card(props) {
     const {
@@ -29,7 +30,7 @@ function Card(props) {
             <div
                 className="card_card_top"
                 style={{
-                    background: `url(http://localhost:3500/images/products/${card_img_file}/${card_img_s}) no-repeat center center`,
+                    background: `url(${SERVER}/images/products/${card_img_file}/${card_img_s}) no-repeat center center`,
                     backgroundSize: "cover",
                 }}
             >

@@ -3,6 +3,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import CounterGroup from "./CounterGroup";
 import styles from "./css/goodsList.module.scss";
 import transitionStyles from "../../css/transition_group_animation.module.scss";
+import { SERVER } from "../../../../config/api-path";
 
 function GoodsList(props) {
     const { setDeleteId, setModalIsOpen, listName } = props;
@@ -31,7 +32,7 @@ function GoodsList(props) {
                 >
                     <li className={list_style}>
                         <div className={img_wrap}>
-                            <img src={item.picture} alt={item.name} />
+                            <img src={`${SERVER}/${item.picture}`} alt={item.name} />
                         </div>
                         <p className={p_name}>
                             {item.name[0]}

@@ -10,6 +10,7 @@ import Footer from "../../component/Footer";
 import Modal from "../../../src/component/Modal/Modal";
 import frontpagecouponimg from "../../images/frontpage/frontpagecoupon.png";
 import "./FrontPage.css";
+import { SERVER } from "../../config/api-path";
 import { Link } from "react-router-dom";
 import ChatBot from "../../component/Bot/ChatBot";
 // import Spinnerwrap from "../../component/Item/SpinnerWrap/SpinnerWrap";
@@ -35,11 +36,11 @@ function FrontPage() {
             <NavBar />
             <Carousel
                 imgs={[
-                    "http://localhost:3500/images/frontpage/banner/banner-home.png",
-                    "http://localhost:3500/images/frontpage/banner/banner-product.jpg",
-                    "http://localhost:3500/images/frontpage/banner/banner-food.jpg",
-                    "http://localhost:3500/images/frontpage/banner/banner-course1.jpg",
-                    "http://localhost:3500/images/frontpage/banner/banner-course2.jpg",
+                    `${SERVER}/images/frontpage/banner/banner-home.png`,
+                    `${SERVER}/images/frontpage/banner/banner-product.jpg`,
+                    `${SERVER}/images/frontpage/banner/banner-food.jpg`,
+                    `${SERVER}/images/frontpage/banner/banner-course1.jpg`,
+                    `${SERVER}/images/frontpage/banner/banner-course2.jpg`,
                 ]}
                 height={700}
             // isAuto={false}

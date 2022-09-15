@@ -1,6 +1,7 @@
 import { React, useEffect, useState } from "react";
 import axios from "axios";
 import { useAuth } from "../../../component/Member/AuthContextProvider";
+import { SERVER } from "../../../config/api-path";
 // import { useNavigate } from "react-router-dom";
 // import GameBGM from "../../../images/Coupon/GameBGM.mp3";
 // import useSound from "use-sound";
@@ -15,7 +16,7 @@ function GameOver(props) {
         };
         axios
             .post(
-                "http://localhost:3500/GetPoint/Api-point-result",
+                `${SERVER}/GetPoint/Api-point-result`,
                 {
                     ScoreResult: ScoreResult,
                     // theNewTotalPoints: theNewTotalPoints,

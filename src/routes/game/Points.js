@@ -3,7 +3,7 @@ import { useAuth } from "../../component/Member/AuthContextProvider";
 import NavBar from "../../component/NavBar/NavBar";
 // import "./css/Points.css";
 import "./css/Points.scss";
-
+import { SERVER } from "../../config/api-path";
 import axios from "axios";
 import { Link, useLocation, useSearchParams,useNavigate } from "react-router-dom";
 import moment from "moment";
@@ -27,7 +27,7 @@ function Points() {
 
     const Points = async () => {
         await axios
-            .get("http://localhost:3500/Points/API", {
+            .get(`${SERVER}/Points/API`, {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${token}`,

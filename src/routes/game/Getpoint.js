@@ -14,6 +14,7 @@ import ChatBot from "../../component/Bot/ChatBot";
 import PacmanLoader from "react-spinners/PacmanLoader";
 import GameBGM from "../../images/Coupon/GameBGM.mp3";
 import useSound from "use-sound";
+import { SERVER } from "../../config/api-path";
 // import sounds from "../../images/Coupon/yisell_sound_201404102304403674_88366.mp3";
 function Getpoint() {
     const [isOpen1, setIsOpen1] = useState(true);
@@ -28,7 +29,7 @@ function Getpoint() {
 
     const CheckPoint = async () => {
         await axios
-            .get("http://localhost:3500/GetPoint/Api-check-point-result", {
+            .get(`${SERVER}/GetPoint/Api-check-point-result`, {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${token}`,

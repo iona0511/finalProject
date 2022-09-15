@@ -1,6 +1,7 @@
 import "./FoodCardDetail.scss";
 import { useState } from "react";
 import { iceChoice, sugarChoice } from "../../../config/constant";
+import { SERVER } from "../../../config/api-path";
 
 function FoodCardDetail({ showFoodDetail, setIsShow, setDataFromFoodDetail }) {
     const {
@@ -32,7 +33,7 @@ function FoodCardDetail({ showFoodDetail, setIsShow, setDataFromFoodDetail }) {
                     <div className="detailPhotoArea">
                         <figure>
                             <img
-                                src={`http://localhost:3500/images/food/${menu_photo}`}
+                                src={`${SERVER}/images/food/${menu_photo}`}
                                 alt=""
                                 className="photo"
                             />

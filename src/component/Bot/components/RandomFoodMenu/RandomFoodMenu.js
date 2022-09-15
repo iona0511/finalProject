@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { SERVER } from "../../../../config/api-path";
 
 import axios from "axios";
 
@@ -7,7 +8,7 @@ const RandomFoodMenu = () => {
     const [randomFoodMenuPhoto, setRandomFoodMenuPhoto] = useState(null);
     const RandomFoodMenuPhotos = async () => {
         await axios
-            .get("http://localhost:3500/RandomFoodMenuPhotos/Api", {
+            .get(`${SERVER}/RandomFoodMenuPhotos/Api`, {
                 headers: {
                     "Content-Type": "application/json",
                 },
@@ -26,9 +27,7 @@ const RandomFoodMenu = () => {
                 <div className="RandomFoodMenuTitle">{randomFoodMenuName}</div>
                 <div className="RandomFoodMenuIMG">
                     <img
-                        // src={`http://localhost:3500/images/food/${randomFoodMenuPhoto}`}
-                        // src={require("../../images/Coupon/store_img1.png")}
-                        src={`http://localhost:3500/images/food/${randomFoodMenuPhoto}`}
+                        src={`${SERVER}/images/food/${randomFoodMenuPhoto}`}
                         alt=""
                     />
                 </div>
