@@ -25,6 +25,8 @@ function Card(props) {
     //         return v.products_sid === products_sid;
     //     })
     // );
+    console.log('card_img_file', card_img_file);
+    console.log('card_img_s', card_img_s);
     return (
         <div className={card_className}>
             <div

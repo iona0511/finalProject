@@ -86,8 +86,8 @@ function LoginMain() {
     // 欄位輸入的值
     const [myform, setMyform] = useState({
         member_name: "",
-        member_account: "",
-        member_password: "",
+        member_account: "ming",
+        member_password: "ming",
         member_mail: "",
     });
 

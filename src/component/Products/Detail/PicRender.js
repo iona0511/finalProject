@@ -17,7 +17,6 @@ function PicRender(props) {
     }, [dataLoaded]);
 
     const [imgSelect, setimgSelect] = useState("");
-
     const el = (
         <div>
             <div className="productPic">
@@ -45,29 +44,27 @@ function PicRender(props) {
             <div className="littlePic">
                 {dataLoaded
                     ? renderData[0].products_picMuti.split(",").map((v, i) => {
-                          return (
-                              <Fragment key={i}>
-                                  <img
-                                      onClick={(e) => {
-                                          setimgSelect(e.target.src);
-                                      }}
-                                      src={
-                                          dataLoaded
-                                              ? `${SERVER}/images/products/${
-                                                    renderData[0]
-                                                        .products_with_products_categories_sid
-                                                }/${
-                                                    renderData[0].products_picMuti.split(
-                                                        ","
-                                                    )[i]
-                                                }`
-                                              : ""
-                                      }
-                                      alt="small product's pic"
-                                  />
-                              </Fragment>
-                          );
-                      })
+                        return (
+                            <Fragment key={i}>
+                                <img
+                                    onClick={(e) => {
+                                        setimgSelect(e.target.src);
+                                    }}
+                                    src={
+                                        dataLoaded
+                                            ? `${SERVER}/images/products/${renderData[0]
+                                                .products_with_products_categories_sid
+                                            }/${renderData[0].products_picMuti.split(
+                                                ","
+                                            )[i]
+                                            }`
+                                            : ""
+                                    }
+                                    alt="small product's pic"
+                                />
+                            </Fragment>
+                        );
+                    })
                     : ""}
             </div>
             <div className="tagWrap">
