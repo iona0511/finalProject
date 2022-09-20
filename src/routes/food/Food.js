@@ -227,7 +227,7 @@ function Food() {
             <NavBar />
             <div className="Food-container">
                 <Path pathObj={{ path: ["．點餐"] }} />
-                <Carousel imgs={[ca, ca1, ca2]} />
+                <Carousel imgs={[ca, ca1, ca2, ca, ca1,ca2]} />
                 <div className="container">
                     <div>
                         {showMap && (
